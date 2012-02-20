@@ -104,7 +104,7 @@ Assuming no errors this time, go ahead and
     $ cabal install
     $ cd ..
 
-##Fixing cabal install
+##Fixing lambdabot
 
 Now then, I ran into no errors in dependencies
 besides the ones I've listed.
