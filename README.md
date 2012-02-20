@@ -16,6 +16,9 @@ First, start off the normal way
     $ cabal update && cabal instal lambdabot
 
 You'll likely run into issues.
+
+##Fixing IOSpec
+
 Now that everything *except* the problematic libraries are installed,
 do a cabal install again to see which one fails first.
 
@@ -30,6 +33,8 @@ For me, it was `IOSpec` first. So let's fix that.
 
 This will again reitrate the problem with IOSpec,
 assuming a newer version has not yet been posted.
+If this doesn't produce errors for you,
+then skip this section.
 
     Illegal operator ...
       Use -XTypeOperators to allow operators in types
@@ -46,6 +51,8 @@ Assuming no build errors this time, go ahead and install the library.
 
     $ cabal install
 
+##Fixing readline
+
 All right, on to the next one.
 
     $ cd .. && cabal install lambdabot
@@ -56,6 +63,8 @@ so after some guidance from #haskell irc,
 I found this was all I needed to resolve that matter:
 
     $ sudo apt-get install libreadline6-dev
+
+##Fixing numbers
 
 Onwards!
 
@@ -93,6 +102,8 @@ Assuming no errors this time, go ahead and
 
     $ cabal install
 
+##Fixing cabal install
+
 Now then, I ran into no errors in dependencies
 besides the ones I've listed.
 The last error was in `lambdabot` itself:
@@ -119,6 +130,8 @@ No errors?
 
 Congratulations, you've got yourself a shiny new build of
 lambdabot, installed with ghc 7.4.1!
+
+##Thanks!
 
 Special thanks to the many lambdabot contributors over the years.
 Here's hoping for a clean `cabal install lambdabot`
