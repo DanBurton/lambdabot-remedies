@@ -50,12 +50,13 @@ I've added `TypeOperators` to the list of Extensions.
 Assuming no build errors this time, go ahead and install the library.
 
     $ cabal install
+    $ cd ..
 
 ##Fixing readline
 
 All right, on to the next one.
 
-    $ cd .. && cabal install lambdabot
+    $ cabal install lambdabot
 
 The next problem I ran into was with `readline`.
 I'm a bit of a Debian newb,
@@ -101,6 +102,7 @@ for the benefit of all.
 Assuming no errors this time, go ahead and
 
     $ cabal install
+    $ cd ..
 
 ##Fixing cabal install
 
@@ -108,7 +110,6 @@ Now then, I ran into no errors in dependencies
 besides the ones I've listed.
 The last error was in `lambdabot` itself:
 
-    $ cd ..
     $ cabal unpack lambdabot
     $ cd lambdabot-4.2.3.2
     $ cabal configure
@@ -127,6 +128,7 @@ Modify `lambdabot.cabal` yourself...or for the lazy
 No errors?
 
     $ cabal install
+    $ cd ..
 
 Congratulations, you've got yourself a shiny new build of
 lambdabot, installed with ghc 7.4.1!
