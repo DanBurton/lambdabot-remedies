@@ -135,7 +135,9 @@ lambdabot, installed with ghc 7.4.1!
 
 ##Thanks!
 
-Special thanks to the many lambdabot contributors over the years.
+Special thanks to the many
+[lambdabot contributors](http://code.haskell.org/lambdabot/AUTHORS)
+over the years.
 Here's hoping for a clean `cabal install lambdabot`
 very soon! (What are the chances of switching from
 readline to haskeline?)
