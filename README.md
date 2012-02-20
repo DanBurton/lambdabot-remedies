@@ -9,7 +9,7 @@ As of Mon Feb 20 15:04:25 MST 2012
 * Add FlexibleInstances to extensions in lambdabot.cabal
 
 #Install lambdabot anyways
-**Until these get libs fixed, here's how you can install lambdabot**
+**Until these libs get fixed, here's how you can install lambdabot**
 
 First, start off the normal way
 
@@ -97,6 +97,7 @@ Now then, I ran into no errors in dependencies
 besides the ones I've listed.
 The last error was in `lambdabot` itself:
 
+    $ cd ..
     $ cabal unpack lambdabot
     $ cd lambdabot-4.2.3.2
     $ cabal configure
@@ -118,3 +119,18 @@ No errors?
 
 Congratulations, you've got yourself a shiny new build of
 lambdabot, installed with ghc 7.4.1!
+
+Special thanks to the many lambdabot contributors over the years.
+Here's hoping for a clean `cabal install lambdabot`
+very soon! (What are the chances of switching from
+readline to haskeline?)
+
+<hr />
+
+danburton.email@gmail.com
+
+(c) 2012 Dan Burton.
+
+I release my additions to these files under
+whatever license those files were originally released under.
+(Probably BSD3)
