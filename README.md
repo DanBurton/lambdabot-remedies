@@ -13,11 +13,12 @@ As of Mon Feb 20 15:04:25 MST 2012
 
 First, start off the normal way
 
-    $ cabal update && cabal instal lambdabot
+    $ cabal update && cabal install lambdabot
 
 You'll likely run into issues.
 
 ##Fixing IOSpec
+**Update: IOSpec version 0.2.5 should fix this issue**
 
 Now that everything *except* the problematic libraries are installed,
 do a cabal install again to see which one fails first.
@@ -26,7 +27,7 @@ do a cabal install again to see which one fails first.
 
 For me, it was `IOSpec` first. So let's fix that.
 
-    $ cabal unpack IOSPec
+    $ cabal unpack IOSpec
     $ cd IOSpec-0.2.4
     $ cabal configure
     $ cabal build
@@ -66,6 +67,7 @@ I found this was all I needed to resolve that matter:
     $ sudo apt-get install libreadline6-dev
 
 ##Fixing numbers
+**Update: numbers version 3000.0.0.0 should fix this issue**
 
 Onwards!
 
